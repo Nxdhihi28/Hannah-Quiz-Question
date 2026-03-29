@@ -4,6 +4,7 @@ let choices = document.querySelector(".choices")
 let submit = document.querySelector(".submitBtn")
 let next = document.querySelector(".nextBtn")
 let scoreCard = document.querySelector(".scoreCard")
+const alert = document.querySelector('.alert')
 let start = document.querySelector(".startBtn")
 let timer = document.querySelector(".timer")
 

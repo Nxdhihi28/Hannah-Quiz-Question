@@ -41,8 +41,6 @@ let score = 0
 let quizOver = false 
 let timeLess = 15
 let timeId = null
-<<<<<<< HEAD
-=======
 
 const showQuestion = () => {
     const questionDetail = question_array[curentQuestionIndex];
@@ -73,4 +71,3 @@ const CheckAnswer = () => {
     const allChoices =document.querySelectorAll('.choices');
     
 }
->>>>>>> 7a3795a (commit)

@@ -41,3 +41,36 @@ let score = 0
 let quizOver = false 
 let timeLess = 15
 let timeId = null
+<<<<<<< HEAD
+=======
+
+const showQuestion = () => {
+    const questionDetail = question_array[curentQuestionIndex];
+    question.textContent = questionDetail.question;
+    choices.textContent = "";
+    for (let i = 0; i < questionDetail.choices.length; i++) {
+        const curentChoices = questionDetail.choices[i];
+        const choicesdiv = document.createElement('div');
+        choicesdiv. textContent=curentChoices;
+        choicesdiv.classList.add('choices');
+        choicesdiv.classList.remove('wrong','correct','selected') ;
+        choicesdiv.style.pointerEvents ='auto';
+        choices.appendChild(choicesdiv);
+        choicesdiv.addEventListener('click',()=>{
+            document.querySelectorAll ('.choice').forEach(c => c.classList. remove('selected'));
+            choicesdiv.classList.add('selected')
+        })
+    }
+    submit.style.display = "block";
+    next.style.display = "none";
+
+    startTimer()
+}
+
+const CheckAnswer = () => {
+    const selectedChoices = document.querySelector('.choices.selected');
+    const correctAnswer = quiz[curentQuestionIndex].answer;
+    const allChoices =document.querySelectorAll('.choices');
+    
+}
+>>>>>>> 7a3795a (commit)
